@@ -4,9 +4,7 @@
 # Exclude CMake files from detection
 *.cmake linguist-detectable=false
 
-# Exclude C++ files (if any)
-*.cpp linguist-detectable=false
-*.h linguist-detectable=false
+
 
 
 
