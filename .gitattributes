@@ -1,6 +1,15 @@
+# Prioritize Dart files for detection
 *.dart linguist-detectable=true
+
+# Exclude CMake files from detection
+*.cmake linguist-detectable=false
+
+# Exclude C++ files (if any)
 *.cpp linguist-detectable=false
 *.h linguist-detectable=false
-*.cmake linguist-detectable=false
+
+# Treat platform-specific directories as vendored (ignored in language stats)
 android/** linguist-vendored
 ios/** linguist-vendored
+build/** linguist-vendored
+
